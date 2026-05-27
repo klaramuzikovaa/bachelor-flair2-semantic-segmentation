@@ -1,0 +1,19 @@
+# Základní frameworky pro hluboké učení (v kontejneru již instalovány)
+torch>=2.0.0
+pytorch-lightning>=1.9.0,<2.0.0
+
+# Architektury modelů a augmentace použité v experimentech
+segmentation-models-pytorch>=0.3.0
+albumentations>=1.3.0
+
+# Experiment tracking a logování
+wandb>=0.16.0
+
+# Práce s geografickými daty a maticemi
+numpy>=1.24.0,<1.27.0
+rasterio>=1.3.0
+
+# Pomocné knihovny pro metriky a vizualizaci
+torchmetrics>=0.11.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
