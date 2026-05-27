@@ -21,17 +21,19 @@ Repozitář obsahuje zdrojové kódy k bakalářské práci. Jedná se o modifik
 V případě spuštění mimo kontejner nainstalujte balíčky pomocí:
 ```bash
 pip install -r requirements.txt
+```
 
 ### 2. Lokální spuštění
 Trénování nebo evaluace se spouští pomocí `main.py` s předáním cesty ke konfiguračnímu souboru přes parametr `--config_file`:
 ```bash
 python main.py --config_file config/flair-2-config.yml
+```
 
 ### 3. Spuštění na MetaCentru (PBS)
 Úloha se do plánovacího systému odesílá příkazem:
 ```bash
 qsub run.sh
-
+```
 Skript run.sh automaticky alokuje výpočetní uzel s GPU, doinstaluje potřebné knihovny (wandb), překopíruje dataset na lokální scratch, pomocí nástroje sed vygeneruje upravenou konfiguraci config_scratch.yml se správnými cestami k datům a spustí výpočet přes Singularity kontejner
 
 ## Logování a sledování
